@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="rip_edu_state" type="run_launch.py" name="run_launch" output="screen"/>
+  <node pkg="rip_edu_state" type="cml_state.py" name="cml_state" output="screen"/>
+  
+</launch>

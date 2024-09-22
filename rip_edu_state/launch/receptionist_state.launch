@@ -1,0 +1,5 @@
+<launch>
+  <!-- <node pkg="rip_edu_state" type="receptionist_state.py" name="receptionist_state" output="screen"/> -->
+  
+  <node pkg="rip_edu_state" type="receptionist_state_without_confirm.py" name="receptionist_state_without_confirm" output="screen"/>
+</launch>

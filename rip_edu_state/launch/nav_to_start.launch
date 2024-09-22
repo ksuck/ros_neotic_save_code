@@ -1,0 +1,8 @@
+<launch>
+	<node pkg="rip_edu_voice" type="text_to_speech.py" name="text_to_speech" output="screen"/>
+  <node pkg="rip_edu_voice" type="speech_to_text.py" name="speech_to_text" output="screen"/>
+
+ 	<node pkg="rip_edu_navigation" type="nav_to_pose.py" name="nav_to_pose" output="screen"/>
+
+  <node pkg="rip_edu_state" type="cml_state.py" name="cml_state" output="screen"/>
+</launch>

@@ -1,0 +1,15 @@
+<launch>
+  <include file="$(find turtlebot_bringup)/launch/bringup.launch"/>
+  <include file="$(find turtlebot_navigation)/launch/amcl_ldemo.launch"/>
+  <include file="$(find turtlebot_rviz_launchers)/launch/view_navigation.launch"/>  
+  
+  <node pkg="rip_edu_voice" type="text_to_speech.py" name="text_to_speech" output="screen"/>
+  <node pkg="rip_edu_voice" type="speech_to_text.py" name="speech_to_text" output="screen"/>
+
+	<include file="$(find freenect_launch)/launch/freenect.launch"/>
+	<node pkg="rip_edu_vision" type="MarkHumanPositionToMap.py" name="MarkHumanPositionToMap" output="screen"/>
+  <node pkg="rip_edu_vision" type="classification_detect.py" name="classification_detect" output="screen"/>
+  <node pkg="rip_edu_navigation" type="nav_to_pose.py" name="nav_to_pose" output="screen"/>
+  <node pkg="rip_edu_navigation" type="nav_to_goal_xyt.py" name="nav_to_goal_xyt" output="screen"/>
+  
+</launch>
