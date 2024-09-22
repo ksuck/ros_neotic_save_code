@@ -1,0 +1,3 @@
+<launch>
+    <node name="manipulator_node" pkg="rip_edu_manipulator" type="manipulatorControl.py" output="screen"/>
+</launch>

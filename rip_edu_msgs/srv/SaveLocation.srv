@@ -1,0 +1,6 @@
+string pose_name
+string x
+string y
+string theta
+---
+bool success

@@ -1,0 +1,7 @@
+#goal         
+---
+#result
+string status
+---
+#feedback
+float32 distance_from_human

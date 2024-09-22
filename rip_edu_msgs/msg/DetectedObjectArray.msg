@@ -1,0 +1,2 @@
+Header header
+rip_edu_msgs/DetectedObject[] detected_objects

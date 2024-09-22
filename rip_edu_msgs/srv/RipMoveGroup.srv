@@ -1,0 +1,5 @@
+float32[] position
+string mode_kinematic
+int32 gripper
+---
+bool success
