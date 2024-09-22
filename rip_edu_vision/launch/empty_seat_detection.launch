@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find freenect_launch)/launch/freenect.launch"/>
+
+    <node pkg="rip_edu_vision" type="detect_empty_seat.py" name="yolov5_node" output="screen">
+        <remap from="image" to="/usb_cam/image_raw" />
+        <remap from="image_with_bounding_boxes" to="your_bounding_boxes_topic" />
+    </node>
+</launch>

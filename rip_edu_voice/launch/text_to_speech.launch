@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="rip_edu_voice" type="text_to_speech.py" name="text_to_speech" output="screen"/>
+</launch>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find freenect_launch)/launch/freenect.launch"/>
+    
+    <node name="rip_edu_vision" pkg="rip_edu_vision" type="human_pose_detection.py" output="screen">
+        <rosparam command="load" file="/home/naja/Home/src/rip_edu_vision/config/main_config.yaml"/>
+        <param name="image_topic" value="/camera/rgb/image_color" />
+        <param name="point_cloud_topic" value="/camera/depth/points" />
+        <param name="label_map" value="/home/naja/Home/src/dodo_detector_ros/models/FEI_OpenDoors_OID_syn75/label_map.pbtxt"/>
+    </node>
+</launch>

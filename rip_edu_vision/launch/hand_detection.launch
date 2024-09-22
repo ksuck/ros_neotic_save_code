@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find freenect_launch)/launch/freenect.launch"/>
+		<node pkg="rip_edu_vision" type="hand_detection.py" name="hand_detection" output="screen"/>
+    <!-- <node pkg="rip_edu_vision" type="fake_hand_detection.py" name="hand_detection" output="screen"/> -->
+</launch>
