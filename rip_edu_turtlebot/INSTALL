@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root [sudo ./INSTALL]"
+  exit
+fi
+
+sudo apt install -y ros-noetic-urdf ros-noetic-ecl* ros-noetic-joy ros-noetic-xacro ros-noetic-robot-state-publisher ros-noetic-diagnostic-aggregator libusb-dev libftdi-dev python-is-python3 ros-noetic-gmapping ros-noetic-amcl ros-noetic-map-server ros-noetic-dwa-planner ros-noetic-move-base
+
